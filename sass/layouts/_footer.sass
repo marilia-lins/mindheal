@@ -1,0 +1,40 @@
+@use '../base/variables'
+@use '../base/reset'
+
+footer
+    background-color: variables.$cor1
+    text-align: center
+
+    .row
+        padding: 3rem 0
+
+        &:nth-child(1)
+            border-bottom: 0.2rem solid variables.$white1  
+
+        &:nth-child(2)
+            justify-content: center
+            gap: 20rem
+
+        .column
+            width: 100%
+
+            h3
+                color: variables.$white2 
+
+            p
+                color: variables.$white2 
+                text-align: center
+
+        i
+            color: variables.$cor5 
+            font-size: 3rem
+            cursor: pointer
+
+.copyright
+    margin: 1rem
+    background-color: variables.$white2 
+    text-align: center
+
+    p
+        color: variables.$black 
+

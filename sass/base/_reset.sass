@@ -1,0 +1,92 @@
+@use '../base/variables'
+
+*:before, *:after
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+*:not(i)
+    font-family: "Poppins", sans-serif
+
+body
+    margin: 0
+    
+
+html 
+    font-size: 62.5%
+    scroll-behavior: smooth
+
+    a
+        text-decoration: none
+
+    ul
+        list-style: none
+
+    .btn-primary, .btn-secondary
+        padding: 1rem 2rem
+        border-radius: variables.$borderRadius2
+        outline: none
+        border: none
+        transition: 0.5s
+    
+    .btn-primary
+        background-color: variables.$cor1 
+        color: variables.$white1
+
+        &:hover
+            background-color: variables.$cor2
+
+    .btn-secondary
+        background-color: variables.$white1
+        border: 0.2rem solid variables.$cor1 
+        color: variables.$cor1 
+
+        &:hover
+            border: 0.2rem solid variables.$cor2
+            color: variables.$cor2
+
+    h1
+        font-size: variables.$headingFontSize1
+        margin-bottom: 2rem
+        word-spacing: 1rem
+        line-height: 1.6
+
+    h2
+        font-size: variables.$headingFontSize2
+        color: variables.$black
+        font-weight: 700
+        margin: 2rem 0 5rem 0
+        text-align: center
+
+
+    h3
+        font-size: variables.$headingFontSize3
+        color: variables.$black 
+        font-weight: 700
+        margin: 1.5rem 0
+
+    h4
+        font-size: variables.$headingFontSize4
+        color: variables.$grey
+        margin: 1.5rem 0
+
+
+    button, p, input[type="email"]
+        font-size: variables.$baseFontSize
+        color: variables.$grey
+        line-height: 1.8
+        font-weight: 400
+    
+    button
+        cursor: pointer
+
+    section
+        padding: 5rem
+
+    .row
+        display: flex
+        justify-content: space-around
+        gap: 3rem
+
+
+

@@ -1,0 +1,39 @@
+@use '../base/variables'
+@use '../base/reset'
+
+.newsletter
+    background: linear-gradient(variables.$white1 60%, variables.$cor1 60%)
+
+    .wrapper
+        background-color: variables.$white1
+        padding: 3rem 10rem
+        border-radius: variables.$borderRadius1 
+        box-shadow: 0 -10px 25px rgba(60, 60, 200, 0.05)
+
+        h3
+            color: variables.$black 
+            text-align: center
+        
+        p
+            text-align: center 
+
+        form
+            margin: 3rem 0 1rem 0
+            display: flex
+            justify-content: space-between
+
+            input
+                width: 60%
+                padding: 0.8rem 2rem
+                border: 0.1rem solid variables.$grey
+                border-radius: variables.$borderRadius2
+                outline: none
+
+                &:focus
+                    border: 0.1rem solid variables.$grey 
+            
+            button
+                width: 30%
+
+                &:hover
+                    background-color: variables.$cor5 

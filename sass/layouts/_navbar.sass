@@ -1,0 +1,70 @@
+@use '../base/variables'
+@use '../base/reset'
+
+.progress-container
+    width: 100%
+    height: 1rem
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(255, 255, 255, 0.5)
+    backdrop-filter: blur(0.8rem)
+
+    #progress
+        width: 0
+        height: 100%
+        background: linear-gradient(0.25turn, #fe84a9, #ff916c)
+
+nav
+    width: 96%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: fixed
+    top: 1rem
+    left: 0
+    padding: 2rem
+    background-color: rgba(255, 255, 255, 0.5)
+    backdrop-filter: blur(0.8rem)
+
+    #logo
+        font-size: 2.7rem 
+        font-weight: 700
+        color: variables.$cor1
+
+
+    ul
+        display: flex
+        justify-content: space-around
+        gap: 2rem
+
+        a
+            color: variables.$black
+            display: block
+            position: relative
+            font-size: variables.$headingFontSize4
+
+            &::before
+                content: ""
+                position: absolute
+                background-color: transparent
+                width: 0
+                height: 20%
+                bottom: 0
+                z-index: -1
+                margin-left: -5%
+                transition: all 0.5s
+
+            &:hover::before
+                background-color: variables.$cor3
+                width: 110%
+
+.sticky
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.03)
+
+  
+  
+
+
+    
+    
